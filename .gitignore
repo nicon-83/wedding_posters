@@ -1,0 +1,14 @@
+#all txt files
+*.txt
+
+#folders
+node_modules/
+build/
+
+#archive
+*.rar
+*.7z
+*.zip
+
+#psd files
+*.psd

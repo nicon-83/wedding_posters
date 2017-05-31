@@ -1,0 +1,132 @@
+footer {
+	flex: 0 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	position: relative;
+	background: @base-bg-color;
+	border-top: 1px solid @base-border-color;
+	box-shadow: 0px -3px 10px rgba(44,44,44,.7);
+	font-family: @footer-ff, Arial, sans-serif;
+	font-size: 0.8rem;
+	@media screen and (min-width: @width-phones){
+		font-size: 0.9rem;
+	}
+	@media screen and (min-width: @width-tablet){
+		font-size: 1rem;
+	}
+	@media screen and (min-width: @width-large){
+		font-size: 1.1rem;
+	}
+	a {
+		display: inline;
+		color: #000;
+		&:hover {
+		color: #fff;
+		text-shadow: 0 1px 0 rgba(0,0,0,.8);
+		}
+	}
+	.f_left {
+		align-self: center;
+		flex-basis: 35%;
+	}
+	.f_center {
+		text-align: center;
+		align-self: center;
+		flex-basis: 30%;
+		p {
+			font-style: normal;
+			text-transform: uppercase;
+			cursor: pointer;
+			display: inline;
+			&:hover{
+				color: #fff;
+				text-shadow: 0 1px 0 rgba(0,0,0,.8);
+			}
+			.my_works {
+				width: 200px;
+				text-align: left;
+				text-transform: none;
+				text-shadow: none;
+				font-size: 1rem;
+				letter-spacing: 2px;
+				padding: 15px;
+				background: @base-bg-color;
+				border: 1px solid @base-border-color;
+				border-radius: 10px;
+				box-shadow: 0px 2px 10px rgba(0,0,0,0.8);
+				z-index: 10;
+				&::after {
+					content: '';
+					display: block;
+					border: 15px solid transparent;
+					border-top-color: @base-bg-color;
+					position: absolute;
+					bottom: -30px;
+					left: ~'calc(50% - 15px)';
+				}
+				a {
+					display: inline-block;
+					color: #000;
+					font-style: normal;
+					margin: 7px 0;
+					&:hover {
+						transform: scale(1.05);
+						color: #fff;
+						text-shadow: 0 1px 0 rgba(0,0,0,.8);
+					}
+				}
+			}
+		}
+	}
+	.f_right {
+		text-align: right;
+		align-self: center;
+		flex-basis: 35%;
+		p::first-letter {
+			font-size: 0.9rem;
+			@media screen and (min-width: @width-phones){
+				font-size: 1.3rem;
+			}
+		}
+	}
+	.rose {
+		position: absolute;
+		bottom: 60%;
+		left: 0;
+		width: 102px;
+		height: 70px;
+		@media screen and (min-width: @width-phones){
+			width: 133px;
+			height: 91px;
+		}
+		@media screen and (min-width: @width-tablet){
+			width: 144px;
+			height: 97px;
+		}
+		@media screen and (min-width: @width-large){
+			width: 160px;
+			height: 108px;
+		}
+	}
+
+	.rings {
+		position: absolute;
+		bottom: 80%;
+		right: 1%;
+		width: 51px;
+		height: 36px;
+		@media screen and (min-width: @width-phones){
+			width: 65px;
+			height: 46px;
+		}
+		@media screen and (min-width: @width-tablet){
+			width: 75px;
+			height: 53px;
+		}
+		@media screen and (min-width: @width-large){
+			width: 90px;
+			height: 63px;
+		}
+	}
+}

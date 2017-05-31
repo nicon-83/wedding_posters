@@ -1,0 +1,22 @@
+.scenar3{
+	column-count: 1;
+	font-size: 0.8rem;
+	text-align: center;
+	p{
+		display: inline-block;
+		width: 240px;
+		text-indent: 0;
+		padding: 10px;
+		@media screen and (min-width: @width-phones){
+			width: auto;
+		}
+	}
+	@media screen and (min-width: @width-phones){
+		text-align: left;
+		font-size: 1rem;
+		column-count: 2;
+	}
+		@media screen and (min-width: @width-large){
+		column-count: 3;
+	}
+}

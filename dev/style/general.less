@@ -1,0 +1,57 @@
+@import 'imports/_settings';
+@import 'imports/reset';
+@import 'imports/fonts';
+html, body{
+	height: 100%;
+}
+body{
+	background: @body-bg-image;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	background: @wrapper-bg-color;
+	max-width: 1280px;
+	min-width: 320px;
+	margin: 0 auto;
+	border: 1px solid @base-border-color;
+	box-sizing: border-box;
+	font-family: @base-ff;
+	a{
+		text-decoration: none;
+		color: #000;
+	}
+	h3{
+	text-align: center;
+	color: @base-border-color;
+	padding-bottom: 10px;
+	}
+}
+@import 'imports/header';
+.content_container{
+	flex: 1 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	@import 'imports/nav';
+	.content{
+		flex-basis: 100%;
+		padding: 30px 10px 70px 10px;
+		background: url(../img/nav_bg.png) repeat-y, linear-gradient(#FFF,@bg-light-color);
+		background-size: contain;
+		@media screen and (min-width: @width-tablet){
+			flex: 1;
+			background: linear-gradient(#FFF,@bg-light-color);
+		}
+		@import 'imports/index';
+		@import 'imports/scenar3';
+		@import 'imports/scenar4';
+		@import 'imports/nadpisi';
+		@import 'imports/postcard';
+		@import 'imports/postcardtext';
+		@import 'imports/raznoe';
+		@import 'imports/slova';
+		@import 'imports/songs';
+	}
+}
+@import 'imports/footer';
