@@ -23,7 +23,7 @@ nav{
 			height: 323px;
 			}
 		}
-		&::after{
+		span.menu::after{
 			content: '';
 			display: inline-block;
 			position: absolute;
@@ -40,7 +40,7 @@ nav{
 			div{
 				height: 3px;
 				background: @base-border-color;
-				border-radius: 50%;
+				border-radius: 40%;
 				margin-top: 3px;
 				&:first-child{
 					margin-top: 0;
@@ -107,7 +107,7 @@ nav{
 					border-top: 7px solid @base-border-color;
 					position: absolute;
 					top: 40%;
-					left: 91%;
+					left: 90%;
 				}
 			}
 		}
@@ -166,9 +166,11 @@ nav{
 			height: 35px;
 			width: 180px;
 			padding-left: 7px;
-			line-height: 17.5px;
 			margin-top: 15px;
 			z-index: 5;
+			span{
+				line-height: 1.09375rem;
+			}
 			.drop_menu{
 				position: absolute;
 				display: none;
