@@ -57,7 +57,10 @@ var path = {
 	watch: {
 		html: './dev/**/*.html',
 		js: './dev/js/**/*.js',
-		style: './dev/style/**/*.less',
+		style: {
+			less: './dev/style/**/*.less',
+			css: './dev/style/**/*.css'
+		},
 		img: './dev/img/**/*.*',
 		fonts: './dev/fonts/**/*.*'
 	},
@@ -124,7 +127,7 @@ gulp.task('default', function(){
 		gulp.start('htmlCreator');
 	});
 
-	gulp.watch([path.watch.style], function(event){
+	gulp.watch([path.watch.style.less, path.watch.style.css], function(event){
 		gulp.start('cssCreator');
 	});
 

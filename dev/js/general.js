@@ -20,9 +20,9 @@ $('#works').addPopUp({
 		parentLinksSelector: '#works a',
 		containerSelector: '.wrapper',
 		nodes: [
-			'<a href="./Calculator/index.html">Калькулятор на javascript</a>',
-			'<a href="./trafficLight/index.html">Светофор на javascript</a>',
-			'<a href="./calendar/index.html">Календарь на javascript</a>'
+			'<div><a href="./calculator/index.html">Калькулятор на javascript</a><span> | </span><a href="https://github/nicon-83/calculator.git">GitHub</a></div>',
+			'<div><a href="./trafficLight/index.html">Светофор на javascript</a><span> | </span><a href="https://github.com/nicon-83/traffic_light.git">GitHub</a></div>',
+			'<div><a href="./calendar/index.html">Календарь на javascript</a><span> | </span><a href="https://github.com/nicon-83/calendar.git">GitHub</a></div>'
 		]
 	});
 

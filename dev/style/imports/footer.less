@@ -44,11 +44,15 @@ footer {
 				text-shadow: 0 1px 0 rgba(0,0,0,.8);
 			}
 			.my_works {
-				width: 200px;
+				width: 220px;
+				font-size: 0.75rem;
+				@media screen and (min-width: @width-phones){
+					width: 280px;
+					font-size: 1rem;
+				}
 				text-align: left;
 				text-transform: none;
 				text-shadow: none;
-				font-size: 1rem;
 				letter-spacing: 2px;
 				padding: 15px;
 				background: @base-bg-color;
@@ -75,6 +79,10 @@ footer {
 						color: #fff;
 						text-shadow: 0 1px 0 rgba(0,0,0,.8);
 					}
+				}
+				span{
+					color: #000;
+					cursor: auto;
 				}
 			}
 		}
