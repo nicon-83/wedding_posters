@@ -100,21 +100,18 @@ footer {
 	}
 	.rose {
 		position: absolute;
-		bottom: 60%;
+		bottom: 65%;
 		left: 0;
-		width: 102px;
-		height: 70px;
+		transform: scale(0.4);
+		transform-origin: left bottom;
 		@media screen and (min-width: @width-phones){
-			width: 133px;
-			height: 91px;
+			transform: scale(0.5);
 		}
 		@media screen and (min-width: @width-tablet){
-			width: 144px;
-			height: 97px;
+			transform: scale(0.6);
 		}
 		@media screen and (min-width: @width-large){
-			width: 160px;
-			height: 108px;
+			transform: scale(0.8);
 		}
 	}
 
@@ -122,19 +119,16 @@ footer {
 		position: absolute;
 		bottom: 80%;
 		right: 1%;
-		width: 51px;
-		height: 36px;
+		transform: scale(0.4);
+		transform-origin: right bottom;
 		@media screen and (min-width: @width-phones){
-			width: 65px;
-			height: 46px;
+			transform: scale(0.5);
 		}
 		@media screen and (min-width: @width-tablet){
-			width: 75px;
-			height: 53px;
+			transform: scale(0.6);
 		}
 		@media screen and (min-width: @width-large){
-			width: 90px;
-			height: 63px;
+			transform: scale(0.8);
 		}
 	}
 }

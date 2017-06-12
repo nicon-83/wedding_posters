@@ -10,6 +10,7 @@ var gulp = require('gulp'),
 	 rimraf = require('rimraf'),
 	 imagemin = require('gulp-imagemin'),
 	 pngquant = require('imagemin-pngquant'),
+	 gcmq = require('gulp-group-css-media-queries'),
 	 livereload = require('livereload');
 
 var settings = {
@@ -82,6 +83,7 @@ gulp.task('htmlCreator', function(){
 gulp.task('cssCreator', function(){
 	gulp.src(path.src.style)
 		.pipe(less())
+		.pipe(gcmq())
 		.pipe(autoprefixer(settings.autoprefixer))
 		.pipe(minifyCss(settings.minifyCss))
 		.pipe(gulp.dest(path.build.css))
